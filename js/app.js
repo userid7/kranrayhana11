@@ -52,7 +52,7 @@ databaseRef.once('value', function(snapshot) {
 	}
 	
 	
-	colortrig();
+// 	colortrig();
 	checkk.setAttribute('onclick','check()')
 	
 
@@ -106,13 +106,13 @@ function check(){
 function colortrig(){
 	if(trig == true){
 		document.getElementById('counterr').style.color = "#EA7052";
-		checkk.value="Filling the water..."
+		checkk.value="Filling the water...";
 		checkk.style.backgroundColor = "#EA7052";
 // 		document.getElementById(divId).getElementsByClassName("amount")[0].style.color= 'black';
 	}
 	else {
 		document.getElementById('counterr').style.color = "#FEFEFF";
-		checkk.value="Start"
+		checkk.value="Start";
 		checkk.style.backgroundColor = "#1ECB8D";
 	}
 }
