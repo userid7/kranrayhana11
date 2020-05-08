@@ -53,7 +53,7 @@ databaseRef.once('value', function(snapshot) {
 	
 	
 	colortrig();
-	checkk.onClick = check();
+	checkk.setAttribute('onclick','check()')
 	
 
    document.getElementById('tess').innerHTML = "Connected";
@@ -108,7 +108,7 @@ function colortrig(){
 		document.getElementById('counterr').style.color = "#EA7052";
 		checkk.value="Filling the water..."
 		checkk.style.backgroundColor = "#EA7052";
-		document.getElementById(divId).getElementsByClassName("amount")[0].style.color= 'black';
+// 		document.getElementById(divId).getElementsByClassName("amount")[0].style.color= 'black';
 	}
 	else {
 		document.getElementById('counterr').style.color = "#FEFEFF";
