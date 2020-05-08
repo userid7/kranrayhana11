@@ -52,8 +52,8 @@ databaseRef.once('value', function(snapshot) {
 	}
 	
 	
-// 	colortrig();
-// 	checkk.setAttribute('onclick','check()')
+	colortrig();
+	checkk.setAttribute('onclick','check()')
 	
 
    document.getElementById('tess').innerHTML = "Connected";
