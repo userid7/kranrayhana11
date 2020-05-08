@@ -56,7 +56,7 @@ databaseRef.once('value', function(snapshot) {
 	checkk.setAttribute('onclick','check()');
 	
 
-   document.getElementById('tess').innerHTML = "Connectedd";
+   document.getElementById('tess').innerHTML = "Connected";
    
 
   });
