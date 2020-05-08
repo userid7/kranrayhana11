@@ -53,7 +53,7 @@ databaseRef.once('value', function(snapshot) {
 	
 	
 // 	colortrig();
-	checkk.setAttribute('onclick','check()')
+// 	checkk.setAttribute('onclick','check()')
 	
 
    document.getElementById('tess').innerHTML = "Connected";
