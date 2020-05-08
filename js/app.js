@@ -52,8 +52,8 @@ databaseRef.once('value', function(snapshot) {
 	}
 	
 	
-	checkk.checked = trig;
 	colortrig();
+	checkk.onClick = check();
 	
 
    document.getElementById('tess').innerHTML = "Connected";
@@ -66,7 +66,7 @@ databaseRef.on('value', function(snapshot) {
 	countdown = snapshot.child('countdown').val();
 
 	transportation.stepNo = countdown;
-	checkk.checked = trig;
+// 	checkk.checked = trig;
 	colortrig();
 	
   });
@@ -106,8 +106,13 @@ function check(){
 function colortrig(){
 	if(trig == true){
 		document.getElementById('counterr').style.color = "#EA7052";
+		checkk.value="Filling the water..."
+		checkk.style.backgroundColor = "#EA7052";
+		document.getElementById(divId).getElementsByClassName("amount")[0].style.color= 'black';
 	}
 	else {
 		document.getElementById('counterr').style.color = "#FEFEFF";
+		checkk.value="Start"
+		checkk.style.backgroundColor = "#1ECB8D";
 	}
 }
