@@ -36,7 +36,8 @@ var databaseRef = firebase.database().ref('rumah/');
 
 databaseRef.once('value', function(snapshot) {
    trig = snapshot.child('trigger').val();
-	countdown = snapshot.child('countdown').val();
+   countdown = snapshot.child('countdown').val();
+   if(countdown >= 59) countdown = 59;
 
 	if(trig == true){
 		transportation.stepNo = countdown;
